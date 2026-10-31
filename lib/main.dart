@@ -11,15 +11,17 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       home: Scaffold(body: Center(
-  child: Column(
+  child: Column( 
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
     children: [
   Text('Hello World!'),
   Text('Bienvenue dans mon application  de Salah '),
   Container(
   margin: EdgeInsets.all(20),
-  padding: EdgeInsets.all(16),
+  padding: EdgeInsets.all(20),
   decoration: BoxDecoration(
-    color: Colors.blueAccent,
+  color: Colors.deepPurple,
     borderRadius: BorderRadius.circular(12),
   ),
   child: Text(
@@ -29,7 +31,7 @@ class MainApp extends StatelessWidget {
 ),
 
               Stack(
-                alignment: Alignment.center,
+                alignment: Alignment.topRight,
                 children: [
                   Container(
                     width: 200,
